@@ -1,0 +1,42 @@
+<!DOCTYPE html> // 문서타입 지정
+<html lang="en">
+<head> // 문서 기본 정보 및 필요한 파일(CSS, JS) 링크 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    주요성과
+    컴퓨터소프트웨어공학과의 학과 교육을 위한 노력은 그동안 여러 형태로 결실을 맺고 있다. 
+    높은 취업률과 함께 정규직 취업률과 대기업 취업률에서도 높은 성과를 얻고 있다. 
+    또한 졸업생 채용 기업체에 대한 만족도 조사에서 매우 높은 만족도를 보이고 있다. 
+    이는 컴퓨터 관련 대학교육의 대표적 모범 사례로보고된 우리 학과의 체계적인 설계 교육에 의한 것이다.
+
+    <label>아이디 <input type="text"></label>  <br>
+    <label>비밀번호 <input type="text"></label> // label 안에 input 태그 넣기 > 모바일 환경 배려
+
+    <fieldset>
+            <legend>로그인 정보</legend>
+            <label>아이디 <input type="text"></label>
+            <label>비밀번호 <input type="password"></label> // type을 password로 지정하면 자동으로 안보이도록 설정
+    </fieldset>
+
+            <label><input type="radio" name="site" value="Jeju">제주도</label> // 목록 중 하나만 선택 가능한 radio button
+            <label><input type="radio" name="site" value="Danang">다낭</label> // name이 같은 목록만 적용
+            <label><input type="radio" name="site" value="Sydney">시드니</label> // value는 각각 달라야
+
+</body>
+</html>
+
+&nbsp; // 공백(1칸)
+&amp // &
+&qout // 쌍따옴표
+
+h2{
+    color: green;
+}
+.bluetext{ // 클래스 선택자가 태그보다 우선됨.
+    color: blue;
+}
