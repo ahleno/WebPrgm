@@ -40,3 +40,35 @@ h2{
 .bluetext{ // 클래스 선택자가 태그보다 우선됨.
     color: blue;
 }
+
+#container > ul { // 후손선택자
+    border: 2px dotted blue;
+}
+
+h1 ~ p { // 형제선택자
+    text-decoration: underline;
+}
+
+a[target="_blank"] { // 속성선택자
+    background-color: yellow;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{ // pseudo 클래스
+    background-color: yellow;
+    color: #00f;
+}
+
+input:focus{
+    background-color: antiquewhite;
+}
+
+
+div:nth-child(2n+1){
+    background-color: red;    
+}
+
+<p>lorem4</p> // 4개의 단어로 구성된 랜덤 문장 생성
