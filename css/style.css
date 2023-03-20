@@ -1,10 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+}
+
 div{
     display: inline-block;
-    width: 300px;
-    height: 100px;
-    background-color: black;
-    color: red;
-    text-align: justify;
-    line-height: 100px;
+    border-width: 2px;
+}
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    width: auto; 
+    height: 90px;
+    border: 0 100px 0 50px;
+}
+
+a:visited{
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.dp1{
+    display: inline-block;
+    width: 100px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+}
+
+.dp1:hover{
+    color: #f6ca00;
 }

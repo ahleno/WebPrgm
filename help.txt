@@ -72,3 +72,17 @@ div:nth-child(2n+1){
 }
 
 <p>lorem4</p> // 4개의 단어로 구성된 랜덤 문장 생성
+
+    border-radius: 20% 0 0 20%; // 모서리를 둥글게
+    border-style: dashed; // 테두리
+    border-width: thick; // 속성
+    box-sizing: border-box; // border 까지의 크기를 조정함
+    box-sizing: content-box; // content 박스의 크기를 조정함 
+    
+padding: 10px 30px 10px 30px; // 위부터 시계방향순서대로 조정
+margin: 10px 30px 10px 30px; // 동일함
+
+display: block; // 한 줄 전체를 차지함
+display: inline; // 줄 전체를 차지하지 않음
+display: inline-block; // 인라인 요소로 적용되나 내부 요소는 블록처럼 적용
+
