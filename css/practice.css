@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: black;
+}
+ul {
+    list-style-type: none;
+}
+div, ul, li {
+    border: 1px solid black;
+}
+.hd_fixed {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.hd_content {
+    display: flex;
+    height: 90px;
+}
+.logo {
+    width: 170px;
+}
+.logo {
+    line-height: 90px;
+    text-align: center;
+}
+.gnb_menu {
+    width: 900px;
+    margin: 0 auto;
+}
+.gnb_menu li {
+    padding: 0, 30px;
+    text-align: center;
+}
+.gnb_menu ul {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.gnb_menu ul li {
+    width: 13%;
+    line-height: 90px;
+}
+a {
+    /*위에서 line-height을 90px로 잡아서 content영역이 공백을 포함하여 더 늘어남*/
+    /*따라서 height을 지정하지 않아도 이미 a 태그의 높이가 늘어나 있음 */
+    display: inline-block;
+}
+    
