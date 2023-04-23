@@ -1,61 +1,54 @@
-function addText( ) {
-    let x = document.getElementsByTagName("li");
-    document.getElementById("demo").innerHTML = x[1].innerHTML;
+window.onload = () => {
+    let lis = document.querySelectorAll("li");
+    // lis.forEach((li) => li.addEventListener("click", toggleList));
+    var ul = document.querySelector("#sampleList")
+    ul.addEventListener("click", toggleList)
+
+    var addBtn = document.querySelector("#addBtn")
+    addBtn.addEventListener("click", addList)
 }
 
-function menuTemp() {
-    let iceMenus = document.getElementsByClassName("ice-menu");
-    let hotMenus = document.getElementsByClassName("hot-menu");
+function toggleList(event) {
+    var clickedLi = document.getElementById(event.target.id)
+    clickedLi.classList.toggle("remove")
+}
 
-    console.log(typeof iceMenus);
+function addList() {
+    var sampleList = document.getElementById("sampleList");
+    var listLen = sampleList.children.length;
 
-    // element
-    for(let i of iceMenus) {    
-        i.style.color = "blue";
+    var newLi = document.createElement("li")
+    newLi.setAttribute("id", `list${listLen + 1}`)
+    newLi.appendChild(document.createTextNode("기존 리스트 " + (listLen + 1)))
+    sampleList.appendChild(newLi)
+}
+
+/*
+var divs = document.querySelectorAll("div")
+divs.forEach(div => div.addEventListener(
+    "click",            // Event Type 지정
+    logEvent,           // Callback 함수 지정
+    {capture: true}     // Capturing 방식 사용
+))
+
+function logEvent(event) {
+    if(event.currentTarget.className == "two") {
+        event.stopPropagation()
     }
-
-    // index 
-    for(let i in [...hotMenus]) {
-        hotMenus[i].style.color = "red";
-    }
+    console.log(event.currentTarget.className)
 }
+*/
 
-function removeMenu() {
-    let demo = document.querySelector("#demo");
-    demo.innerHTML = "";
-}
+/*
+var element = document.getElementById("div");
+element.addEventListener("click", function(ev){
+    alert("clicked!")
+    console.log(1, this)
+    console.log(2, ev)
+})
 
-function popupSelected() {
-    let demo = document.getElementsByClassName("select-textbox")[0];
-    let selectedNum = demo.value;
-    let lis = document.querySelectorAll("#menu-ul li");
+element.addEventListener("click", function(){
+    alert("hello world")
+})
 
-    console.log(selectedNum);
-    selectedNum += selectedNum;
-    if(selectedNum < 1 || selectedNum > lis.length) {
-        alert("error");
-    } else {
-        alert(getMenuName())
-    }
-}
-
-function getMenuName() {
-    let menuUL = document.getElementById("menu-ul");
-    let str = null;
-    if(pos == 1) {
-        str = menuUL.firstElementChild.innerHTML;
-    } else if(pos == 2) {
-        str = menuUL.firstElementChild.nextElementSibling.innerHTML;
-    } else if(pos == 3) {
-        str = menuUL.lastElementChild.innerHTML;
-    }
-}
-
-function fontSizeUp() {
-    let lis = document.querySelectorAll("#menu-ul li");
-    lis.forEach((x) => (x.style.fontSize = "30px"));
-}
-    
-let lis = document.getElementsByTagName("li");
-console.log(lis);
-setTimeout(function(){ console.log(lis) }, 15000)
+*/
