@@ -6,8 +6,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" defer src="js/smartstore.js"></script>
 </head>
 <body>
+
+<header></header>
+
+<div>
+  <div class="container">
+    <div class="slide-container">
+      <div class="mySlides fade">
+        <img src="img/carousel_1.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/carousel_2.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/carousel_3.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/carousel_4.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/carousel_5.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/carousel_6.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/carousel_7.jpeg" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
     
+    <br>
+    
+    <div class="thumbnail" style="text-align:center">
+      <span class="thumb" onclick="currentSlide(1)">
+        <img src="img/carousel_1.jpeg" style="width:100%">
+      </span> 
+      <span class="thumb" onclick="currentSlide(2)">
+        <img src="img/carousel_2.jpeg" style="width:100%">
+      </span> 
+      <span class="thumb" onclick="currentSlide(3)">
+        <img src="img/carousel_3.jpeg" style="width:100%">
+      </span> 
+      <span class="thumb" onclick="currentSlide(4)">
+        <img src="img/carousel_4.jpeg" style="width:100%">
+      </span> 
+      <span class="thumb" onclick="currentSlide(5)">
+        <img src="img/carousel_5.jpeg" style="width:100%">
+      </span> 
+      <span class="thumb" onclick="currentSlide(6)">
+        <img src="img/carousel_6.jpeg" style="width:100%">
+      </span> 
+      <span class="thumb" onclick="currentSlide(7)">
+        <img src="img/carousel_7.jpeg" style="width:100%">
+      </span>   
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="product-info">
+      <div>
+        <h3>2023 코베아 네스트W/이너텐트 루프플라이 그라운드시트 포함</h3>
+      </div>
+      <div>
+        <h2 class>
+          <span class="price each">730,000</span>
+          <span class="won">원</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="">
+      <div class="dropdown">
+        <a>색상</a>
+        <button onclick="dropdownBtn()" class="dropbtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="#acb2bc" fill-rule="evenodd" class="bd_29oQW">
+            <path d="M13 2v1h-1v1h-1v1h-1v1H9v1H8v1H6V7H5V6H4V5H3V4H2V3H1V2H0V0h1v1h1v1h1v1h1v1h1v1h1v1h2V5h1V4h1V3h1V2h1V1h1V0h1v2h-1z"></path>
+          </svg>
+        </button> 
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#khaki">카키</a>
+          <a href="#brown">브라운</a>
+          <a href="#tan">탄</a>
+          <a href="#ivory">아이보리</a>
+          <a href="#black">블랙</a>
+        </div>
+      </div>
+      
+      <div class="shopping-basket">
+        <ul id="wishlist">
+          <li>
+            <div>
+              <p class="product-color">브라운</p>
+              <br>
+              <div class="add">
+                <div class="quantity-box">
+                  <button type="button" class="minus-button" onclick="minusQuantity(); setTotalQuantity(); setTotalPrice();">
+                    <span>-</span>
+                  </button>
+                  <input type="number" id="quantity" value="1">
+                  <button type="button" class="plus-button" onclick="plusQuantity(); setTotalQuantity(); setTotalPrice();">
+                    <span>+</span>
+                  </button>
+                </div>
+                <div class="price-box">
+                  <h3 class="except">
+                    <span class="price">730,000</span>
+                    <span class="won">원</span>
+                  </h3>
+                  <button class="cancel">
+                    <span class="blind">X</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    
+      <div class="price-info">
+        <nav>
+          <strong>총 상품 금액</strong>
+          <button id="question-mark">?</button>
+        </nav>
+        <nav>
+          <a>총 수량</a>
+          <a id="total-quantity">1</a>
+          <a>개</a>
+          <span class="price total" id="total-price">0</span>
+          <strong class="won">원</strong>
+        </nav>
+      </div>
+      <div href="#" class="purchase">
+        <a>N
+          <span>구매하기</span>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+  
 </body>
-</html>
+</html> 
